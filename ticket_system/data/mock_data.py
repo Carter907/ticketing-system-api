@@ -1,4 +1,4 @@
-from model.ticket import Ticket
+from ticket_system.model.ticket import Ticket
 
 ticketList: list[Ticket] = [
     Ticket(
