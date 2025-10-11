@@ -21,41 +21,12 @@ This project is a RESTful API for managing IT support tickets. Built with FastAP
 - **Pydantic**: Data validation using Python type annotations
 - **Python 3.10+**: Leveraging modern Python features
 
-## Project Objectives
-
-The primary objectives of this ticketing system are to:
-
-1. **Simplify Ticket Management**: Provide an intuitive API for creating and managing IT support tickets
-2. **Improve Response Times**: Enable quick ticket creation and status tracking
-3. **Ensure Data Integrity**: Use strong typing and validation to maintain data quality
-4. **Scale Efficiently**: Leverage FastAPI's async capabilities for high-performance operations
-5. **Developer-Friendly**: Offer automatic API documentation and easy integration
-
 ## Installation
 
 ### Prerequisites
 
 - Python 3.10 or higher
 - pip (Python package installer)
-
-### Setup
-
-1. Clone the repository:
-```bash
-git clone https://github.com/Carter907/ticketing-system-api.git
-cd ticketing-system-api
-```
-
-2. Create a virtual environment (recommended):
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. Install dependencies:
-```bash
-pip install fastapi uvicorn[standard] pydantic
-```
 
 ## Usage
 
@@ -76,47 +47,6 @@ Once the server is running, access the interactive API documentation:
 - **Swagger UI**: http://localhost:8000/docs
 - **ReDoc**: http://localhost:8000/redoc
 
-## API Endpoints
-
-### Create Ticket
-
-**Endpoint**: `POST /tickets/create`
-
-**Headers**:
-- `bingus_type`: Custom header for request type
-- `content_type`: Content type of the request
-
-**Request Body**:
-```json
-{
-  "id": 1,
-  "subject": "Unable to access email",
-  "description": "User cannot log into their email account",
-  "status": "not started"
-}
-```
-
-**Response**:
-```json
-{
-  "id": 1,
-  "subject": "Unable to access email",
-  "description": "User cannot log into their email account",
-  "status": "not started"
-}
-```
-
-## Data Models
-
-### Ticket
-
-| Field | Type | Required | Description |
-|-------|------|----------|-------------|
-| id | integer | Yes | Unique ticket identifier |
-| subject | string | Yes | Brief summary of the issue |
-| description | string | No | Detailed description of the issue |
-| status | string | Yes | Current ticket status (e.g., "not started", "in progress", "completed") |
-
 ## Roadmap
 
 Future enhancements planned for this project:
@@ -132,10 +62,6 @@ Future enhancements planned for this project:
 - [ ] Database integration (PostgreSQL/MongoDB)
 - [ ] User management system
 - [ ] Analytics and reporting features
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
