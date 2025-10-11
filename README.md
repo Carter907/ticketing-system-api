@@ -35,7 +35,7 @@ This project is a RESTful API for managing IT support tickets. Built with FastAP
 Run the application using uvicorn:
 
 ```bash
-uvicorn main:app --reload
+uvicorn web:app --reload
 ```
 
 The API will be available at `http://localhost:8000`
