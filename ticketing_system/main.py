@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from ticket_system.model.ticket import Ticket
-from ticket_system.data.mock_data import tickets
+from ticketing_system.model.ticket import Ticket
+from ticketing_system.data.mock_data import tickets
 
 app = FastAPI()
 
