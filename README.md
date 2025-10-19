@@ -25,7 +25,7 @@ This project is a RESTful API for managing IT support tickets. Built with FastAP
 
 ### Prerequisites
 
-- Python 3.10 or higher
+- Python 3.11 or higher
 - pip (Python package installer)
 
 ## Usage
