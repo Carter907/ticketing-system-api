@@ -19,7 +19,7 @@ This project is a RESTful API for managing IT support tickets. Built with FastAP
 
 - **FastAPI**: Modern, fast web framework for building APIs
 - **Pydantic**: Data validation using Python type annotations
-- **Python 3.10+**: Leveraging modern Python features
+- **Python 3.11+**: Leveraging modern Python features
 
 ## Installation
 
@@ -35,10 +35,10 @@ This project is a RESTful API for managing IT support tickets. Built with FastAP
 Run the application using uvicorn:
 
 ```bash
-uvicorn web:app --reload
+python3 src/main.py
 ```
 
-The API will be available at `http://localhost:8000`
+The API will be available at `http://127.0.0.1:8000`
 
 ### Interactive API Documentation
 
