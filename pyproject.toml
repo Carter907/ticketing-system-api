@@ -1,7 +1,17 @@
 [project]
 name = "ticket-api"
 version = "0.1.0"
-description = "Add your description here"
+description = "IT Ticketing API for simulated use"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+   "bcrypt==3.2.2",
+   "fastapi[all]>=0.128.0",
+   "httpx>=0.28.1",
+   "passlib>=1.7.4",
+   "pyopt>=0.84",
+   "pytest>=9.0.2",
+   "python-jose[cryptography]>=3.5.0",
+   "sqlalchemy>=2.0.46",
+   "uvicorn>=0.40.0",
+]
