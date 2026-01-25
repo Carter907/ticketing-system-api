@@ -20,22 +20,42 @@ This project is a RESTful API for managing IT support tickets. Built with FastAP
 - **FastAPI**: Modern, fast web framework for building APIs
 - **Pydantic**: Data validation using Python type annotations
 - **Python 3.11+**: Leveraging modern Python features
+- **uv**: A fast Python package installer and dependency resolver
+- **Uvicorn**: An ASGI server, used to run the FastAPI application
 
 ## Installation
 
 ### Prerequisites
 
 - Python 3.11 or higher
-- pip (Python package installer)
+- uv (a fast Python package installer and dependency resolver)
+
+If you don't have `uv` installed, you can install it using `pipx` (recommended) or `pip`:
+
+```bash
+pip install uv
+# or
+pipx install uv
+```
+
+### Setup
+
+```bash
+uv pip install -r requirements.txt
+# or
+uv sync
+```
 
 ## Usage
 
 ### Starting the Server
 
-Run the application using uvicorn:
+First, make sure you have installed the project dependencies, including `uvicorn`, using `uv sync` or `uv pip install -r requirements.txt`.
+
+Then, run the application using uvicorn:
 
 ```bash
-python3 src/main.py
+uvicorn src.main:app --reload
 ```
 
 The API will be available at `http://127.0.0.1:8000`
