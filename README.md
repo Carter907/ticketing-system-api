@@ -69,19 +69,8 @@ Once the server is running, access the interactive API documentation:
 
 ## Roadmap
 
-Future enhancements planned for this project:
+View ![roadmap](ROADMAP.md)
 
-- [ ] Add authentication and authorization
-- [ ] Implement ticket retrieval (GET endpoints)
-- [ ] Add ticket update and deletion functionality
-- [ ] Implement ticket assignment to support staff
-- [ ] Add priority levels for tickets
-- [ ] Implement ticket filtering and searching
-- [ ] Add ticket commenting system
-- [ ] Email notifications for ticket updates
-- [ ] Database integration (PostgreSQL/MongoDB)
-- [ ] User management system
-- [ ] Analytics and reporting features
 
 ## License
 
